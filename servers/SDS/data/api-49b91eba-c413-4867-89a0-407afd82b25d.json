@@ -3180,6 +3180,6 @@
   },
   "graphQlRouteHash": {},
   "graphqlQueriesType": null,
-  "path": "",
+  "path": "/api",
   "schemaPath": null
 }
