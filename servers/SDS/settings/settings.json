@@ -1,0 +1,9 @@
+{
+  "proxyBaseUrl": "https://swsdsbe.nationalvision.com/SDSAPI_NVIeComm_STAGING",
+  "forceProxy": true,
+  "delay": 100,
+  "port": 3006,
+  "reWriteCookieDomain": false,
+  "simplifyCookies": false,
+  "duplicateCookies": false
+}

@@ -1,0 +1,293 @@
+{
+  "id": "c3d0aa64-28ca-48ea-87fe-80fd5ac028b7",
+  "filename": "parent",
+  "path": "/SDSAPI_NVIeComm_STAGING",
+  "routesHash": {
+    "6d4aa7ed-a23b-4b1e-a48b-83ca7ca5f1b9": {
+      "id": "6d4aa7ed-a23b-4b1e-a48b-83ca7ca5f1b9",
+      "description": "example route for Mockingbird",
+      "routePath": "/getExample",
+      "method": "get",
+      "activeResponseId": "9eaf95df-53e1-45b0-ad1a-01f134294811",
+      "responsesHash": {
+        "4b616f18-218d-4c0d-9967-20404cda37e9": {
+          "id": "4b616f18-218d-4c0d-9967-20404cda37e9",
+          "name": "Object response example",
+          "description": "Return example of object response ",
+          "res": {
+            "data": {
+              "isObj": true
+            },
+            "headers": {},
+            "code": 200
+          },
+          "exec": null,
+          "url": null,
+          "type": "obj",
+          "blockProxy": true
+        },
+        "9eaf95df-53e1-45b0-ad1a-01f134294811": {
+          "id": "9eaf95df-53e1-45b0-ad1a-01f134294811",
+          "name": "Func response example",
+          "description": "Example of func that returns object response",
+          "exec": "(req, res) => {\n\t\n\tres.status(400).send({ isFunc: true })\n}",
+          "type": "func",
+          "url": null,
+          "res": null,
+          "blockProxy": false
+        },
+        "f9b2af90-4dbb-458b-905b-030adabc6396": {
+          "id": "f9b2af90-4dbb-458b-905b-030adabc6396",
+          "name": "Proxy response",
+          "description": "Example of proxy response",
+          "url": "https://www.jsonkeeper.com/b/ZIA2",
+          "type": "proxy",
+          "res": null,
+          "exec": null,
+          "blockProxy": false
+        }
+      },
+      "paramType": "body",
+      "paramValue": "",
+      "paramKey": "",
+      "withParams": false
+    },
+    "3a5dcb68-6e00-4c11-9edc-272081a71262": {
+      "description": "Example of a post request",
+      "routePath": "/token",
+      "method": "post",
+      "activeResponseId": "1a4d6a7f-e56a-40dd-8d4e-e398daa92484",
+      "responsesHash": {
+        "1a4d6a7f-e56a-40dd-8d4e-e398daa92484": {
+          "id": "1a4d6a7f-e56a-40dd-8d4e-e398daa92484",
+          "name": "Success",
+          "description": "Example of a success response",
+          "res": {
+            "code": 200,
+            "headers": {},
+            "data": {
+              "access_token": "123"
+            }
+          },
+          "exec": null,
+          "url": null,
+          "type": "obj",
+          "blockProxy": false
+        }
+      },
+      "withParams": false,
+      "paramKey": null,
+      "paramType": "query",
+      "paramValue": null,
+      "id": "3a5dcb68-6e00-4c11-9edc-272081a71262"
+    },
+    "1f3361ff-48a5-4e6f-85fd-c2658ce77bfc": {
+      "description": "",
+      "routePath": "/api/V1",
+      "method": "post",
+      "activeResponseId": "d3f176ed-ed8d-4325-bfb2-7387a939cefa",
+      "responsesHash": {
+        "d3f176ed-ed8d-4325-bfb2-7387a939cefa": {
+          "id": "d3f176ed-ed8d-4325-bfb2-7387a939cefa",
+          "name": "success",
+          "description": "success",
+          "res": {
+            "code": 200,
+            "headers": {},
+            "data": {
+              "access_token": "1234"
+            }
+          },
+          "exec": null,
+          "url": null,
+          "type": "obj",
+          "blockProxy": false
+        }
+      },
+      "withParams": false,
+      "paramKey": null,
+      "paramType": "body",
+      "paramValue": null,
+      "id": "1f3361ff-48a5-4e6f-85fd-c2658ce77bfc"
+    },
+    "7d81bd81-f05f-4b38-9748-9062c10061ba": {
+      "description": "created from proxy call",
+      "routePath": "/token/",
+      "method": "post",
+      "activeResponseId": "ac796aec-e6e0-483e-9131-ba511161ddbc",
+      "responsesHash": {
+        "ac796aec-e6e0-483e-9131-ba511161ddbc": {
+          "id": "ac796aec-e6e0-483e-9131-ba511161ddbc",
+          "name": "",
+          "description": "",
+          "res": {
+            "code": 200,
+            "headers": {},
+            "data": {
+              "access_token": "5678"
+            }
+          },
+          "exec": null,
+          "url": null,
+          "type": "obj",
+          "blockProxy": false
+        }
+      },
+      "withParams": false,
+      "paramKey": null,
+      "paramType": "body",
+      "paramValue": null,
+      "id": "7d81bd81-f05f-4b38-9748-9062c10061ba"
+    },
+    "6239932c-1181-455b-b22d-d0b6e764c3c0": {
+      "description": "created from proxy call",
+      "routePath": "/api/CreateRelatedCustomer/v1",
+      "method": "post",
+      "activeResponseId": "4a04a737-ca83-41bc-a9d2-8b6573bcbe6a",
+      "responsesHash": {
+        "4a04a737-ca83-41bc-a9d2-8b6573bcbe6a": {
+          "id": "4a04a737-ca83-41bc-a9d2-8b6573bcbe6a",
+          "name": "success create related customer",
+          "description": "success",
+          "res": {
+            "code": 200,
+            "headers": {},
+            "data": {
+              "Customer": {
+                "PatientID": 22334457,
+                "StoreReference": "string",
+                "PatientReference": "string",
+                "ECommerceStoreReference": "string",
+                "ECommercePatientReference": "string",
+                "ExternalReference": "string",
+                "Region": "string",
+                "Surname": "string",
+                "Forename": "string",
+                "PreviousSurname": "string",
+                "PreviousForename": "string",
+                "DateOfBirth": "1800-01-01T00:00:00.000Z",
+                "TitleID": 0,
+                "Sex": "string",
+                "Email": "string",
+                "PostalAddresses": [
+                  {
+                    "AddressType": "None",
+                    "TitleID": 2147483647,
+                    "Forename": "d)CBc!?vZ%g?#h~jjSeL|\"Lenj->`@eQ[^[bTYy{kvj+N?X\\EO",
+                    "Surname": "(A>;W=iJ?o!oavVAZfO{YD>qz#&^P!O.i$IQ[O^-nKREa=JR?>",
+                    "Address1": ".dvrdb9K8dV:^aEs/_#rKwYwsD)q.|J2O$^v8B?j",
+                    "Address2": "Yq[ST'#hy:m~l\"FRBY5.b&cnWru`NS|NZlAIwG=G",
+                    "Address3": "q2$Nkqd73-UQ#57b],RG?tcB3K?ol$&D6/rV$\"(~",
+                    "Address4": "wu$]cG [}=K944LM^US&.9Gkz3}.Z=Tkc6c42V^6-F$4Y",
+                    "Address5": "F6(ENq_",
+                    "ZipCode": "ZsWnq/uqQXt",
+                    "Country": "st",
+                    "ID": 2147483647,
+                    "EnforceAddressLineValidation": true
+                  }
+                ],
+                "TelephoneNumbers": [
+                  {
+                    "TelephoneNumberType": "None",
+                    "InternationalCode": "strin",
+                    "AreaCode": "string",
+                    "LocalNumber": "string",
+                    "Extension": "string",
+                    "Preferred": true
+                  }
+                ],
+                "LastStoreVisitDate": "1800-01-01T00:00:00.000Z",
+                "UserID": 0,
+                "Username": "string",
+                "Password": "string",
+                "AllowEmail": true,
+                "AllowSms": true,
+                "AccountHolderPatientID": 0,
+                "AccountHolderStoreReference": "string",
+                "AccountHolderPatientReference": "string",
+                "RelationshipID": 0,
+                "HasEHR": true,
+                "HasEyeCarePlan": true,
+                "IsEmpty": true,
+                "StoresWithoutEHRConsent": [
+                  {
+                    "StoreID": 0,
+                    "TaxPlanFormattedDisplayText": "string",
+                    "StoreReference": "string",
+                    "StoreName": "string",
+                    "StoreDescription": "string",
+                    "RegionID": 0,
+                    "Region": "string",
+                    "TradingType": "string",
+                    "MainPostalAddress": {
+                      "AddressType": "None",
+                      "TitleID": 2147483647,
+                      "Forename": ";T`hJWkE!STN_jyqV\"BZSldp&>PL<`/;Us_^=UE|?QCcR$liac",
+                      "Surname": "O\\U^ n)IC`c=K{ZG^^?'yWtp$ |viFtQJh+acm#q*_I+R",
+                      "Address1": "aXFf.PKye'=O}-X=6QecUX}Vbri5dQVFiy'rv~Ie",
+                      "Address2": "rR^N[X#msJ('tWfl5+dN@\\F9)3IFlG0o?Z1rF|O?",
+                      "Address3": ",+wID7'=7KsF[tyITliY",
+                      "Address4": "&)0w#K^{md o-p3V0hjm}5&U\"Wchj:o(Q(,SI)mKFx0K$",
+                      "Address5": "9FK3ycMDy0-QK`deWCa`hqH'tt4U\":7fdd7",
+                      "ZipCode": "fe-6_=T-dbU",
+                      "Country": "st",
+                      "ID": 2147483647,
+                      "EnforceAddressLineValidation": true
+                    },
+                    "PhoneNumber": {
+                      "TelephoneNumberType": "None",
+                      "InternationalCode": "strin",
+                      "AreaCode": "string",
+                      "LocalNumber": "string",
+                      "Extension": "string",
+                      "Preferred": true
+                    },
+                    "Latitude": 0,
+                    "Longitude": 0,
+                    "DistanceInKm": 0,
+                    "DistanceInMiles": 0,
+                    "OpeningHours": {
+                      "additionalProp1": "string",
+                      "additionalProp2": "string",
+                      "additionalProp3": "string"
+                    },
+                    "TimeZoneID": 0,
+                    "StoreUrl": "string",
+                    "IsWebStore": true,
+                    "StoreType": "string",
+                    "IsEmpty": true,
+                    "ActiveVersion": 0
+                  }
+                ],
+                "IncludeStoresWithoutEHRConsentForStore": true,
+                "ActiveVersion": 0
+              },
+              "MatchedExistingCustomer": true,
+              "ApiVersion": 0,
+              "OperationSuccessful": true,
+              "CorrelationID": "string",
+              "ErrorMessage": "string",
+              "ExceptionLogged": true,
+              "ErrorSubType": "None",
+              "HasErrorMessage": true
+            }
+          },
+          "exec": null,
+          "url": null,
+          "type": "obj",
+          "blockProxy": false
+        }
+      },
+      "withParams": false,
+      "paramKey": null,
+      "paramType": "body",
+      "paramValue": null,
+      "id": "6239932c-1181-455b-b22d-d0b6e764c3c0"
+    }
+  },
+  "graphQlRouteHash": {},
+  "type": "Rest",
+  "name": "",
+  "schemaPath": "test",
+  "graphqlQueriesType": "Query"
+}

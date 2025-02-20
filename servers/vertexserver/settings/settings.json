@@ -1,0 +1,9 @@
+{
+  "proxyBaseUrl": "https://nationalvision.ondemand.vertexinc.com",
+  "forceProxy": false,
+  "delay": 0,
+  "port": 3005,
+  "reWriteCookieDomain": false,
+  "simplifyCookies": false,
+  "duplicateCookies": false
+}

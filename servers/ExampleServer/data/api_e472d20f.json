@@ -1,0 +1,11 @@
+{
+  "id": "6cb14ded-a0a4-475d-bc84-b7c32e2d9e2e",
+  "filename": "api_e472d20f",
+  "path": "/api",
+  "routesHash": {},
+  "graphQlRouteHash": {},
+  "type": "Rest",
+  "name": "",
+  "schemaPath": "",
+  "graphqlQueriesType": "Query"
+}

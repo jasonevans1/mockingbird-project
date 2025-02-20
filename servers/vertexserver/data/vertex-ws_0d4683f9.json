@@ -1,0 +1,103 @@
+{
+  "id": "beed3dc0-5902-458f-8849-bf379765df75",
+  "filename": "vertex-ws_0d4683f9",
+  "path": "/vertex-ws",
+  "routesHash": {
+    "29ad81b1-6062-423b-9f30-21a1b9fb9b2b": {
+      "description": "",
+      "routePath": "/v2/address-lookup",
+      "method": "post",
+      "activeResponseId": "60c0eb4e-9c1a-400b-bf10-73420df36fb2",
+      "responsesHash": {
+        "60c0eb4e-9c1a-400b-bf10-73420df36fb2": {
+          "id": "60c0eb4e-9c1a-400b-bf10-73420df36fb2",
+          "name": "success-addresses",
+          "description": "",
+          "res": {
+            "code": 200,
+            "data": {
+              "data": {
+                "lookupResults": [
+                  {
+                    "addressCleansingResultMessages": [
+                      {}
+                    ],
+                    "confidenceIndicator": "100",
+                    "jurisdictions": [
+                      {
+                        "effectiveDate": "1900-01-01",
+                        "expirationDate": "9999-12-31",
+                        "jurisdictionId": "1",
+                        "jurisdictionType": "COUNTRY",
+                        "value": "UNITED STATES"
+                      },
+                      {
+                        "effectiveDate": "1900-01-01",
+                        "expirationDate": "9999-12-31",
+                        "jurisdictionId": "10757",
+                        "jurisdictionType": "STATE",
+                        "value": "IOWA"
+                      },
+                      {
+                        "effectiveDate": "1900-01-01",
+                        "expirationDate": "9999-12-31",
+                        "jurisdictionId": "11639",
+                        "jurisdictionType": "COUNTY",
+                        "value": "POLK"
+                      },
+                      {
+                        "effectiveDate": "1900-01-01",
+                        "expirationDate": "9999-12-31",
+                        "jurisdictionId": "77294",
+                        "jurisdictionType": "CITY",
+                        "value": "GRIMES"
+                      }
+                    ],
+                    "postalAddresses": [
+                      {
+                        "city": "GRIMES",
+                        "country": "US",
+                        "mainDivision": "IA",
+                        "postalCode": "50111-4935",
+                        "streetAddress1": "812 NW SUNSET LN",
+                        "streetAddress2": "",
+                        "subDivision": "POLK"
+                      }
+                    ],
+                    "statuses": [
+                      {
+                        "lookupResult": "NORMAL",
+                        "value": "status value"
+                      }
+                    ],
+                    "taxAreaId": "161533003"
+                  }
+                ]
+              },
+              "meta": {
+                "app": "vertex-ws.war v9.0.18.2.6",
+                "timeElapsed(ms)": 107,
+                "timeReceived": "2025-01-30T22:55:39.279Z"
+              }
+            },
+            "headers": {}
+          },
+          "exec": null,
+          "url": null,
+          "type": "obj",
+          "blockProxy": false
+        }
+      },
+      "withParams": false,
+      "paramKey": null,
+      "paramType": "body",
+      "paramValue": null,
+      "id": "29ad81b1-6062-423b-9f30-21a1b9fb9b2b"
+    }
+  },
+  "graphQlRouteHash": {},
+  "type": "Rest",
+  "name": "",
+  "schemaPath": "",
+  "graphqlQueriesType": "Query"
+}
